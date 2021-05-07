@@ -9,24 +9,29 @@
 import Foundation
 
 class UserViewModel {
+    
    weak var vc: ViewController?
     weak var detailVC: DetailsViewController?
     var arrUsers = [UserModel]()
     
+    
     func getData () {
-        URLSession.shared.dataTask(with: URL(string: "https://api.github.com/users?since=0&per_page=20")!) { (data, response, error) in
+        URLSession.shared.dataTask(with: URL(string: "https://api.github.com/users?since=\(vc!.pageString)")!) { (data, response, error) in
+            print("https://api.github.com/users?since=\(self.vc!.pageString)")
             if error == nil {
                 if let data = data {
                     
                     do{
+                        
                         let userResponse = try JSONDecoder().decode([UserModel].self, from: data)
                         self.arrUsers.append(contentsOf: userResponse)
                         DispatchQueue.main.async{
                             self.vc?.userTableView.reloadData()
                         }
-                        
+                        self.vc!.pageString += 1
                         
                     } catch let err{
+                        self.vc!.end = true;
                         print(err.localizedDescription)
                     }
                 }
@@ -36,4 +41,5 @@ class UserViewModel {
             }
         } .resume()
     }
+    
 }

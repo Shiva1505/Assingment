@@ -23,7 +23,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        title = "User Details"
         userId.text = candiId
         userName.text = candiName
         userImg.downloaded(from: candiImg)

@@ -11,14 +11,24 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    //Mark - Properties
+    
     var viewModelUser = UserViewModel()
+    var pageString : Int = 0
+    var end : Bool = true
+    
+    
+    //Mark - Outlets
     
     @IBOutlet weak var userTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "GitHub UserList"
         viewModelUser.vc = self
         viewModelUser.getData()
+        userTableView.tableFooterView = UIView(frame: .zero)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -38,6 +48,15 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         cell?.userImg.downloaded(from: imageAvtar!)
         cell?.userImg.makeRounded()
 
+        
+        if indexPath.row == viewModelUser.arrUsers.count - 1 {
+            
+            if (self.end == true ){
+               viewModelUser.getData()
+            }
+           
+            
+        }
         
        
         
