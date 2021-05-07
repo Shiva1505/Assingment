@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B65F63826453D4400F344AC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B65F63726453D4400F344AC /* UserModel.swift */; };
 		3B6E166E2644405A0002B79F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6E166D2644405A0002B79F /* TableViewCell.swift */; };
 		3B6E167026444CC50002B79F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6E166F26444CC50002B79F /* DetailsViewController.swift */; };
 		3B6E1672264457000002B79F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6E1671264457000002B79F /* Extension.swift */; };
@@ -18,7 +19,6 @@
 		3B779D4B26443E1700F07C85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B779D4926443E1700F07C85 /* LaunchScreen.storyboard */; };
 		3B779D5626443E1800F07C85 /* AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B779D5526443E1800F07C85 /* AssignmentTests.swift */; };
 		3B779D6126443E1800F07C85 /* AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B779D6026443E1800F07C85 /* AssignmentUITests.swift */; };
-		3B779D7326443E5E00F07C85 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B779D7226443E5E00F07C85 /* UserModel.swift */; };
 		3B779D7526443E7100F07C85 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B779D7426443E7100F07C85 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B65F63726453D4400F344AC /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		3B6E166D2644405A0002B79F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3B6E166F26444CC50002B79F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		3B6E1671264457000002B79F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -57,7 +58,6 @@
 		3B779D5C26443E1800F07C85 /* AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B779D6026443E1800F07C85 /* AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentUITests.swift; sourceTree = "<group>"; };
 		3B779D6226443E1800F07C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B779D7226443E5E00F07C85 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = ../../../../Downloads/UserModel.swift; sourceTree = "<group>"; };
 		3B779D7426443E7100F07C85 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,7 +144,7 @@
 		3B779D6E26443E3200F07C85 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3B779D7226443E5E00F07C85 /* UserModel.swift */,
+				3B65F63726453D4400F344AC /* UserModel.swift */,
 				3B6E1671264457000002B79F /* Extension.swift */,
 			);
 			path = Model;
@@ -308,10 +308,10 @@
 			files = (
 				3B779D7526443E7100F07C85 /* UserViewModel.swift in Sources */,
 				3B779D4326443E1700F07C85 /* ViewController.swift in Sources */,
+				3B65F63826453D4400F344AC /* UserModel.swift in Sources */,
 				3B779D3F26443E1700F07C85 /* AppDelegate.swift in Sources */,
 				3B6E166E2644405A0002B79F /* TableViewCell.swift in Sources */,
 				3B6E167026444CC50002B79F /* DetailsViewController.swift in Sources */,
-				3B779D7326443E5E00F07C85 /* UserModel.swift in Sources */,
 				3B779D4126443E1700F07C85 /* SceneDelegate.swift in Sources */,
 				3B6E1672264457000002B79F /* Extension.swift in Sources */,
 			);
